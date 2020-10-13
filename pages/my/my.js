@@ -28,14 +28,14 @@ Page({
     })
   },
 
-  //点击义工学分触发的事件
+  //点击快递员详情触发的事件
   onChange(event) {
     this.setData({
       activeNames: event.detail,
     });
     var app = getApp();
     var that = this;
-    //义工学分添加至后台数据库
+    //快递员收入添加至后台数据库
     wx.request({
       url: 'http://api.iazure.me/grade2.php', 
       method:'POST',
@@ -80,7 +80,7 @@ Page({
   onReady: function () {
     var that = this;
     var app = getApp();
-    //处理义工学分
+    //处理快递员收入
     wx.request({
       url: 'http://api.iazure.me/grade.php', 
       method:'POST',
@@ -140,7 +140,7 @@ Page({
   onPullDownRefresh: function () {
     var that = this;
     var app = getApp();
-    //处理义工学分
+    //处理快递员收入
     wx.request({
       url: 'http://api.iazure.me/grade.php', 
       method:'POST',

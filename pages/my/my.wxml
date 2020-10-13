@@ -22,10 +22,10 @@
     </button>
 
     <van-collapse value="{{ activeNames }}" bind:change="onChange" wx:if="{{code == 0}}">
-      <van-collapse-item icon="star-o" title="义工学分" name="1">
+      <van-collapse-item icon="star-o" title="快递员详情" name="1">
         <view>接单总数：{{ receiveCounts }}</view> 
         <view>被投诉总数：{{ complaintsCounts }}</view> 
-        <view>义工总学分：{{ grade }}</view>
+        <view>快递员总收入：{{ grade }}</view>
       </van-collapse-item>
     </van-collapse>
   </view>

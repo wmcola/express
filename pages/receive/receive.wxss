@@ -16,7 +16,7 @@
 }
 .swiper-tab-item{
   display: inline-block;
-  width: 33.33%;
+  width: 50%;
   color:rgb(100, 91, 91);
 }
 .active{

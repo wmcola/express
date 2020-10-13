@@ -7,14 +7,14 @@ Page({
     currentTab: 0,
     clientHeight: 0,
     activeName: '1',
-    //存放东西南三个校区的发单信息
+    //存放三个校区的发单信息
     arraya:[],
     arrayb: [],
-    arrayc: [],
+    // arrayc: [],
     //判断三个校区是否有发单
     codeImagea: '',
     codeImageb: '',
-    codeImagec: '',
+    // codeImagec: '',
 
     buttonDisabled: false,
     modalHidden: true,
@@ -46,7 +46,7 @@ Page({
      buttonDisabled:!this.data.buttonDisabled,
     })
 
-    //请求一：将填写的接单人号码 传至数据库
+    //请求一：将填写的接单人号码传至数据库
     var app = getApp();
     wx.request({
       url: 'http://api.iazure.me/insertPhone.php', 
@@ -81,7 +81,7 @@ Page({
        }else if(res.data[0].code === -1){
         wx.showModal({
           title:'提示',
-          content:'接单失败原因：与义工登记表联系方式不匹配！',
+          content:'接单失败原因：与快递员登记表联系方式不匹配！',
           showCancel:false,
           success(res){}
         })
@@ -181,7 +181,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' 
       },
       success (res) {   
-        //东区信息
+        //成都校区信息
         if(res.data[0].error_code === 1){          
             that.setData({
               arraya : res.data[0].data,
@@ -192,7 +192,7 @@ Page({
             codeImagea : res.data[0].error_code
           })
         }
-        //西区信息
+        //眉山校区信息
         if(res.data[1].error_code === 3){          
           that.setData({
             arrayb : res.data[1].data,
@@ -203,17 +203,17 @@ Page({
             codeImageb : res.data[1].error_code
           })
         }
-        //南区信息
-        if(res.data[2].error_code === 5){          
-          that.setData({
-            arrayc : res.data[2].data,
-            codeImagec : res.data[2].error_code
-          })
-        }else if(res.data[2].error_code === 6){
-          that.setData({
-            codeImagec : res.data[2].error_code
-          })
-        }
+        // //其他校区信息
+        // if(res.data[2].error_code === 5){          
+        //   that.setData({
+        //     arrayc : res.data[2].data,
+        //     codeImagec : res.data[2].error_code
+        //   })
+        // }else if(res.data[2].error_code === 6){
+        //   that.setData({
+        //     codeImagec : res.data[2].error_code
+        //   })
+        // }
       }
     })
   },
@@ -263,16 +263,16 @@ Page({
             codeImageb : res.data[1].error_code
           })
         }
-        if(res.data[2].error_code === 5){          
-          that.setData({
-            arrayc : res.data[2].data,
-            codeImagec : res.data[2].error_code
-          })
-        }else if(res.data[2].error_code === 6){
-          that.setData({
-            codeImagec : res.data[2].error_code
-          })
-        }
+        // if(res.data[2].error_code === 5){          
+        //   that.setData({
+        //     arrayc : res.data[2].data,
+        //     codeImagec : res.data[2].error_code
+        //   })
+        // }else if(res.data[2].error_code === 6){
+        //   that.setData({
+        //     codeImagec : res.data[2].error_code
+        //   })
+        // }
       },
       complete: function (res) {
         wx.hideNavigationBarLoading(); 

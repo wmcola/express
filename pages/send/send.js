@@ -5,11 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    Ono : '',
-    ReceiveAddress : '',
-    Sname : '',
-    Sphone : '',
-    SendAddress : '',
+    Ono : '4234535',
+    ReceiveAddress : '南校区五栋',
+    Sname : '无名',
+    Sphone : '15884213075',
+    SendAddress : '南校区快递站',
     Remark : ''
   },
   signUp: function(event) {
@@ -99,7 +99,7 @@ Page({
             Sphone : that.data.Sphone,
             SendAddress : that.data.SendAddress,
             Remark : that.data.Remark,
-            sendSno : app.globalData.user.username,
+            // sendSno : app.globalData.user.username,
         },
         header: {
           'content-type': 'application/x-www-form-urlencoded' 

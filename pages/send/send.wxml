@@ -3,7 +3,7 @@
   <van-notice-bar
     left-icon="bullhorn-o"
     backgroundColor="#f2f2f2"
-    text="欢迎使用校园微快递，只需输入信息就可收到快递哟！如果成为义工，帮拿快递是可以换取学分的！"
+    text="欢迎使用校园微快递，只需输入信息就可收到快递哟！快来成为快递员，赚钱零花钱吧！"
     color="black"
   />
 
@@ -31,9 +31,9 @@
         required
         clearable
         left-icon="smile-o"
-        label="取单号"
+        label="取件码"
         icon="question-o"
-        placeholder="请输入取单号"
+        placeholder="请输入取件码"
         bind:click-icon="onClickIcon"
         bind:input = "OnoChange"
       />
@@ -42,7 +42,7 @@
         value="{{ ReceiveAddress }}"
         left-icon="wap-home-o"
         label="取件地址"
-        placeholder="如：南校区求学书屋"
+        placeholder="如：成都校区近邻宝"
         required clearable
         bind:input = "ReceiveAddressChange"
       />
@@ -70,7 +70,7 @@
         value="{{ SendAddress }}"
         left-icon="wap-home-o"
         label="收件地址"
-        placeholder="如：南校区9栋001宿舍"
+        placeholder="如：成都校区13-612"
         required clearable
         bind:input = "SendAddressChange"
       />

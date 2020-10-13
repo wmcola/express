@@ -8,7 +8,7 @@
         <input bindinput="username" type="text" placeholder="请输入学号"/>
     </view>
     <view class="pwd">
-        <van-icon name="browsing-history-o" custom-class="person" size="24px"/>
+        <van-icon name="lock" custom-class="person" size="28px"/>
         <input bindinput="password" password="{{ isPassword }}" value="{{password}}" placeholder="请输入密码"/>
         <van-icon name="closed-eye" size="20px" custom-class="eye" bindtap="changePwd"/>
     </view>  
