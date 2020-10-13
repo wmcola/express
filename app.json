@@ -1,0 +1,47 @@
+{
+  "pages":[  
+    "pages/login/login",
+    "pages/send/send",
+    "pages/receive/receive",
+    "pages/receiveInfo/receiveInfo",
+    "pages/sendInfo/sendInfo",
+    "pages/my/my",   
+    "pages/argument/argument",
+    "pages/rule/rule",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#569bed",
+    "backgroundColor": "#f2f2f2",
+    "list": [
+      {
+        "pagePath": "pages/send/send",
+        "text": "发单",
+        "iconPath": "pages/images/tabImg/s.jpg",
+        "selectedIconPath": "pages/images/tabImg/s1.jpg"
+      },
+      {
+        "pagePath": "pages/receive/receive",
+        "text": "接单",
+        "iconPath": "pages/images/tabImg/r.jpg",
+        "selectedIconPath": "pages/images/tabImg/r1.jpg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/images/tabImg/m.jpg",
+        "selectedIconPath": "pages/images/tabImg/m1.jpg"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "校园微快递",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "sitemapLocation": "sitemap.json"
+}

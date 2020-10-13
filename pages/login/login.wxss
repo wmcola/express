@@ -1,0 +1,89 @@
+/* pages/login/login.wxss */
+.main{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed; 
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.user{
+  width: 80%;
+  border-bottom: 1px solid gray;
+  margin: 50% auto 50rpx;
+  background: white; 
+}
+.pwd{
+  width: 80%;
+  border-bottom: 1px solid gray;
+  position: relative;
+  margin: 0 auto 100rpx;
+  background: white;  
+}
+.login{
+  width: 80%;  
+  margin: 0 auto; 
+}
+.btn{
+  position: relative;
+  top: 50%;
+  transform: translateY(-20%);
+  background: rgb(223, 236, 245);
+  font-size: 17px;
+  color: black;
+  border: 1px solid rgb(182, 170, 170);
+  border-radius: 2rem;
+}
+.person{
+  display: inline-block;
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+  color: rgb(193, 208, 220) ;
+}
+.user input{
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-30%);
+}
+.pwd input{
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-30%);
+}
+.eye{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20%);
+  left:45px
+}
+.args{
+  width: 95%;
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.args navigator{
+  color: rgb(150, 204, 243);
+  display: inline-block
+}
+.img{
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto
+}
+#img{
+  position: relative;
+  margin-top: 80px;
+}

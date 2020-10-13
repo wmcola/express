@@ -1,0 +1,25 @@
+<!--pages/receiveInfo/receiveInfo.wxml-->
+<view class="receiveInfoBox">
+      <van-notice-bar
+    left-icon="bullhorn-o"
+    backgroundColor="#f2f2f2"
+    text="若您已将快递送给发单人，请去接单详情页点击“已完成”按钮”，以便计算学分"
+    color="black"
+  />
+  <van-collapse accordion value="{{ activeName }}" bind:change="onChange" wx:for="{{array}}" wx:for-item="item">
+    <van-collapse-item title="取单号：{{item.Ono}}" name="{{item.Ono}}">
+      <view>
+        <view>取件地址：{{item.ReceiveAddress}}</view>
+        <view>收件地址：{{item.SendAddress}}</view>
+        <view>收件人：{{item.Sname}}</view>
+        <view>收件人联系方式：{{item.Sphone}}</view>
+        <view>备注：{{item.Remark}}</view>
+        <view>快递状态：{{item.Status}} </view> 
+        <view class="miniBox">
+          投诉情况：{{item.Complaints}}
+          <button class="btn1" bindtap="statusChange" data-Ono="{{item.Ono}}" >已完成</button>
+        </view>
+      </view>
+    </van-collapse-item>
+  </van-collapse>
+</view>

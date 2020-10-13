@@ -1,0 +1,48 @@
+/* pages/my/my.wxss */
+.myBox{
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+.topBox{
+  height: 220px;
+  background: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ddd6d6;
+}
+
+.tu{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-top: 50px;
+}
+
+ .middleBox{
+ margin-top: 20px;
+} 
+
+.middleBox button{
+  margin: 8px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middleBox button van-icon{
+  margin-right: 4px;
+}
+
+.btn{ 
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 20%;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  line-height: 40px;
+  text-align: center;
+}

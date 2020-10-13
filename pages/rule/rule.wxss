@@ -1,0 +1,14 @@
+/* pages/rule/rule.wxss */
+.users{
+  overflow: hidden;
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+.tit{
+  text-align: center;
+  margin-top: 10px;
+}
+.users view{
+  margin-bottom: 8px;
+}

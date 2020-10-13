@@ -1,0 +1,12 @@
+<!--pages/rule/rule.wxml-->
+<view class="users"  >
+    <view class="tit">用户使用守则</view>
+    <view style="margin-top:15px">
+      1、发单人在收到快递后，必须到我的-发单详情-“确认收货”。
+      <text style="color:red">前提：快递状态为“等待确认收货”。</text>
+    </view>
+    <view>2、发单人可根据实际情况，在我的-发单详情-“投诉”选择是否对该单进行投诉。</view>
+    <view>3、接单人一旦接单就需要完成该任务，<text style="color:red">不可中途退单。</text></view>
+    <view>4、接单人完成快递派送后，需到我的-接单详情-“已完成”。</view>
+    <view>5、接单人义工学分：每完成订单整数6次加0.2分，收到投诉次数3次扣0.1分。只有当快递状态为<text style="color:red">“已收货”</text>时，该单才生效。</view>
+</view>

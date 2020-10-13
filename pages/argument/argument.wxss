@@ -1,0 +1,11 @@
+/* pages/argument/argument.wxss */
+p{
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+}
+view view{
+  font-size:20px;  
+  position: relative;
+  left:35%
+}

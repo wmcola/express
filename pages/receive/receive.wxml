@@ -1,0 +1,98 @@
+<!--pages/receive/receive.wxml-->
+  <view class="body" wx:if="{{ code==0 }}">
+
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">东校区</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">西校区</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">南校区</view>
+  </view>
+
+  <view>
+    <modal title="接单" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+      代收人联系方式（义工登记表上填写的手机号）：<input bindinput="telVolunteer"/>
+    </modal>
+  </view> 
+
+  <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+  <!-- 东区接单详情 -->
+    <swiper-item>
+        <view wx:if="{{codeImagea == 2}}" class="content" >
+          <view class="img">
+            <image src="../images/information.jpg" />  
+          </view>
+        </view>
+        <view wx:if="{{codeImagea == 1}}" class="number">
+          <van-collapse accordion value="{{ activeName }}" bind:change="onChange"  bind:open="onOpen"  bind:close="onClose">
+          <view wx:for="{{arraya}}" wx:key="unique">
+            <van-collapse-item title="收件地址：{{item.ReceiveAddress}}" name="{{item.Ono}}" class="con">
+              <view class=".txt">
+                 <view> 取单号：{{item.Ono}}</view>
+                 <view> 取件地址：{{item.SendAddress}}</view>
+                 <view> 姓名：{{item.Sname}}</view>
+                 <view> 手机号码：{{item.Sphone}}</view>
+                 <view> 备注：{{item.Remark}}</view>
+                 <button class="btn" data-ono="{{item.Ono}}" data-sendSno="{{item.sendSno}}" bindtap="showModal">我要接单</button>
+              </view>
+            </van-collapse-item>
+          </view>
+          </van-collapse>
+        </view>
+    </swiper-item>
+
+<!-- 西区接单详情 -->
+    <swiper-item>
+        <view wx:if="{{codeImageb == 4}}" class="content" >
+          <view class="img">
+            <image src="../images/information.jpg" />  
+          </view>
+        </view>
+        <view wx:if="{{codeImageb == 3}}" class="number">
+          <van-collapse accordion value="{{ activeName }}" bind:change="onChange"  bind:open="onOpen"  bind:close="onClose">
+          <view wx:for="{{arrayb}}" wx:key="unique">
+            <van-collapse-item title="收件地址：{{item.ReceiveAddress}}" name="{{item.Ono}}" class="con">
+              <view class=".txt">
+                 <view> 取单号：{{item.Ono}}</view>
+                 <view> 取件地址：{{item.SendAddress}}</view>
+                 <view> 姓名：{{item.Sname}}</view>
+                 <view> 手机号码：{{item.Sphone}}</view>
+                 <view> 备注：{{item.Remark}}</view>
+                 <button class="btn" data-ono="{{item.Ono}}" data-sendSno="{{item.sendSno}}" bindtap="showModal">我要接单</button>
+              </view>
+            </van-collapse-item>
+          </view>
+          </van-collapse>
+        </view>
+    </swiper-item>
+    
+<!-- 南区接单详情 -->
+    <swiper-item>
+        <view wx:if="{{codeImagec == 6}}" class="content" >
+          <view class="img">
+            <image src="../images/information.jpg" />  
+          </view>
+        </view>
+        <view wx:if="{{codeImagec == 5}}" class="number">
+          <van-collapse accordion value="{{ activeName }}" bind:change="onChange"  bind:open="onOpen"  bind:close="onClose">
+          <view wx:for="{{arrayc}}" wx:key="unique">
+            <van-collapse-item title="收件地址：{{item.ReceiveAddress}}" name="{{item.Ono}}" class="con">
+              <view class=".txt">
+                 <view> 取单号：{{item.Ono}}</view>
+                 <view> 取件地址：{{item.SendAddress}}</view>
+                 <view> 姓名：{{item.Sname}}</view>
+                 <view> 手机号码：{{item.Sphone}}</view>
+                 <view> 备注：{{item.Remark}}</view>
+                 <button class="btn" data-ono="{{item.Ono}}" data-sendSno="{{item.sendSno}}" bindtap="showModal">我要接单</button>
+              </view>
+            </van-collapse-item>
+          </view>
+          </van-collapse>
+        </view>
+    </swiper-item>
+
+  </swiper>
+</view>
+
+<!-- 普通学生展示的接单页面 -->
+<view  wx:if="{{ code==2 }}" class="noVolunteerview"> 
+  <image class="noVolunteer"  src="../images/noVolunteer.jpg" />         
+</view>

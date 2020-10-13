@@ -1,0 +1,25 @@
+/* pages/receiveInfo/receiveInfo.wxss */
+.receiveInfoBox{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.miniBox{
+  height:30px ;
+  display: flex;
+  align-items: center;
+}
+
+.btn1{
+  margin-right: 20px;
+  width: 24%;
+  height: 28px;
+  font-size: 12px;
+}
+
+.btn2{
+  width: 24%;
+  height: 28px;
+  font-size: 12px;
+}

@@ -1,0 +1,29 @@
+/* pages/sendInfo/sendInfo.wxss */
+.sendInfoBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.miniBox{
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.sendInfoBox .btn1{
+  width: 24%;
+  height: 28px;
+  font-size: 12px;
+}
+
+.sendInfoBox .btn1{
+  width: 24%;
+  height: 28px;
+  font-size: 12px;
+}
+
+.btn2{
+  width: 24%;
+  height: 28px;
+  font-size: 12px;
+}

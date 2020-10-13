@@ -1,0 +1,28 @@
+<!--pages/sendInfo/sendInfo.wxml-->
+<view class="sendInfoBox">
+        <van-notice-bar
+    left-icon="bullhorn-o"
+    backgroundColor="#f2f2f2"
+    text="若您已收到快递，请去发单详情页点击“确认收货”按钮"
+    color="black"
+  />
+    <view>
+      <modal title="投诉单" hidden="{{modalHidden}}"  confirm-text="确定" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+        投诉理由：<input bindinput="complaints"/>
+      </modal>
+    </view>
+
+  <van-collapse accordion value="{{ activeName }}" bind:change="onChange" wx:for="{{array}}" wx:key="unique" >
+    <van-collapse-item title="取单号：{{item.Ono}}" name="{{item.Ono}}" >
+      <view>
+        <view>快递状态：{{item.Status}}</view> 
+        <view>代取人联系方式:{{item.Phone}}</view> 
+        <view class="miniBox">
+          <button class="btn1" data-Ono="{{item.Ono}}" bindtap="statusChange">确认收货</button>
+          <button class="btn2" bindtap="showModal" data-telphone="{{item.Phone}}" data-ono="{{item.Ono}}">投诉</button>
+        </view> 
+      </view>
+    </van-collapse-item>
+  </van-collapse>
+</view>
+ 
