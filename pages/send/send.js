@@ -99,7 +99,7 @@ Page({
             Sphone : that.data.Sphone,
             SendAddress : that.data.SendAddress,
             Remark : that.data.Remark,
-            // sendSno : app.globalData.user.username,
+            sendSno : app.globalData.user,
         },
         header: {
           'content-type': 'application/x-www-form-urlencoded' 

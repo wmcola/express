@@ -48,7 +48,7 @@ Page({
           })
         }
         if(res.data.code === 200){
-          getApp().globalData.user = res.data.data;
+          getApp().globalData.user = res.data.type;
           wx.reLaunch({
             url: '../send/send',
           })

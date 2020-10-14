@@ -54,7 +54,7 @@ Page({
       data: {
           Ono : that.data.oo,
           Phone : that.data.telVolunteer,
-          Sno : app.globalData.user.username,
+          Sno : app.globalData.user,
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded' 
@@ -149,7 +149,7 @@ Page({
       url: 'http://api.iazure.me/isVolunteer.php', 
       method:'POST',
       data: {
-          userSno: app.globalData.user.username,
+          userSno: app.globalData.user,
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded' 

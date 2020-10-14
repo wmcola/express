@@ -9,7 +9,7 @@
 
   <view>
     <modal title="接单" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
-      代收人联系方式（快递员登记表上填写的手机号）：<input bindinput="telVolunteer"/>
+      请填写您本人的手机号：<input bindinput="telVolunteer"/>
     </modal>
   </view> 
 
