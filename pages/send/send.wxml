@@ -11,8 +11,8 @@
     <swiper-item>
        <image src="../images/sendImg/1.jpg"></image>
     </swiper-item>
-    <swiper-item bindtap="signUp">
-      <image src="../images/sendImg/2.jpg"></image>
+    <swiper-item>
+      <image src="../images/sendImg/3.jpg"></image>
     </swiper-item>
     <swiper-item>
       <image src="../images/sendImg/4.png"></image>

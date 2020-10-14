@@ -12,12 +12,12 @@ Page({
     SendAddress : '眉山校区13栋',
     Remark : ''
   },
-  signUp: function(event) {
-    Dialog.alert({
-      title: '期待你的加入！',
-      message: 'qq:1169383163',
-    });
-  },
+  // signUp: function(event) {
+  //   Dialog.alert({
+  //     title: '期待你的加入！',
+  //     message: 'qq:1169383163',
+  //   });
+  // },
   OnoChange(event){
     this.setData({
       Ono: event.detail
