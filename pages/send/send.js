@@ -6,16 +6,16 @@ Page({
    */
   data: {
     Ono : '4234535',
-    ReceiveAddress : '南校区五栋',
+    ReceiveAddress : '眉山校区近邻宝',
     Sname : '无名',
     Sphone : '15884213075',
-    SendAddress : '南校区快递站',
+    SendAddress : '眉山校区13栋',
     Remark : ''
   },
   signUp: function(event) {
     Dialog.alert({
       title: '期待你的加入！',
-      message: '1121022808',
+      message: 'qq:1169383163',
     });
   },
   OnoChange(event){
