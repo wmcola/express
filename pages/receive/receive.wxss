@@ -47,6 +47,7 @@
   width: 28%;
   height: 30px;
   font-size: 14px;
+  line-height: 30px;
 }
 .con{
   margin-top: 10px;

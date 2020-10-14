@@ -1,7 +1,7 @@
 <!--pages/login/login.wxml-->
 <view class="main">
     <view id="img">
-      <image src="../images/boat.jpg" class="img"/> 
+      <image src="../images/logo.png" class="img"/> 
     </view>
     <view class="user">
         <van-icon name="contact" custom-class="person" size="28px"/>

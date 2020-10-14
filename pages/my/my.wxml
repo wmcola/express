@@ -2,7 +2,7 @@
 <view class="myBox">
   <view class="topBox" style="background-color:#f2f2f2;">
     <text style="margin-top:20px; color:black; font-size:17px">个人中心</text>
-     <image class="tu" src="../images/boattwo.jpg"></image>
+     <image class="tu" src="../images/logo.png"></image>
   </view>
 
   <view class="middleBox">
