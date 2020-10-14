@@ -96,5 +96,5 @@
 
 <!-- 普通学生展示的接单页面 -->
 <view  wx:if="{{ code==2 }}" class="noVolunteerview"> 
-  <image class="noVolunteer"  src="../images/noVolunteer.jpg" />         
+  <image class="noVolunteer"  src="../images/noVolunteer.png" />         
 </view>

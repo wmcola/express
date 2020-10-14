@@ -15,7 +15,7 @@
       <image src="../images/sendImg/2.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../images/sendImg/3.jpg"></image>
+      <image src="../images/sendImg/4.png"></image>
     </swiper-item>
   </swiper>
 
@@ -25,7 +25,7 @@
     <van-cell-group>
       <van-field
         class="input-class"
-        custom-style="border-radius:8%; height:44px;"
+        custom-style="border-radius:10px; height:44px;"
         size="large"
         value="{{ Ono }}"
         required
@@ -38,7 +38,7 @@
         bind:input = "OnoChange"
       />
       <van-field
-        custom-style="margin:8px 0; border-radius:8%; height:40px;"
+        custom-style="margin:8px 0; border-radius:10px; height:40px;"
         value="{{ ReceiveAddress }}"
         left-icon="wap-home-o"
         label="取件地址"
@@ -47,7 +47,7 @@
         bind:input = "ReceiveAddressChange"
       />
       <van-field
-        custom-style="margin:8px 0; border-radius:8%; height:40px;"
+        custom-style="margin:8px 0; border-radius:10px; height:40px;"
         value="{{ Sname }}"
         left-icon="user-o"
         label="姓名"
@@ -56,7 +56,7 @@
         bind:input = "SnameChange"
       />
        <van-field
-        custom-style="border-radius:8%; height:40px;"
+        custom-style="border-radius:10px; height:40px;"
         value="{{ Sphone }}"
         left-icon="chat-o"
         type="number"
@@ -66,7 +66,7 @@
         bind:input = "SphoneChange"
       />
       <van-field
-        custom-style="margin:8px 0; border-radius:8%; height:40px;"
+        custom-style="margin:8px 0; border-radius:10px; height:40px;"
         value="{{ SendAddress }}"
         left-icon="wap-home-o"
         label="收件地址"
@@ -76,7 +76,7 @@
       />
       <van-field
         value="{{ Remark }}"
-        custom-style="border-radius:8%; height:40px;"
+        custom-style="border-radius:10px; height:40px;"
         left-icon="description"
         type="textarea"
         label="备注"
