@@ -31,6 +31,7 @@
                  <view> 姓名：{{item.Sname}}</view>
                  <view> 手机号码：{{item.Sphone}}</view>
                  <view> 备注：{{item.Remark}}</view>
+                 <view> 发单时间：{{item.datetime}}</view>
                  <button class="btn" data-ono="{{item.Ono}}" data-sendSno="{{item.sendSno}}" bindtap="showModal">我要接单</button>
               </view>
             </van-collapse-item>
@@ -56,6 +57,7 @@
                  <view> 姓名：{{item.Sname}}</view>
                  <view> 手机号码：{{item.Sphone}}</view>
                  <view> 备注：{{item.Remark}}</view>
+                 <view> 发单时间：{{item.datetime}}</view>
                  <button class="btn" data-ono="{{item.Ono}}" data-sendSno="{{item.sendSno}}" bindtap="showModal">我要接单</button>
               </view>
             </van-collapse-item>
