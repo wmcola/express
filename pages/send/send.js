@@ -5,11 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    Ono : '4234535',
-    ReceiveAddress : '眉山校区近邻宝',
-    Sname : '无名',
-    Sphone : '15884213075',
-    SendAddress : '眉山校区13栋',
+    Ono : '',
+    ReceiveAddress : '',
+    Sname : '',
+    Sphone : '',
+    SendAddress : '',
     Remark : ''
   },
   // signUp: function(event) {
@@ -56,7 +56,7 @@ Page({
     if(that.data.Ono == ''){
       wx.showModal({
         title:'提示',
-        content:'订单号不能为空',
+        content:'取件码不能为空',
         showCancel:false,
         success(res){}
       })
@@ -120,7 +120,7 @@ Page({
           }else if(res.data.code === -1){
             wx.showModal({
               title:'提示',
-              content:'订单号重复',
+              content:'取件码重复',
               showCancel:false
             })
           }else if(res.data.code === 0){

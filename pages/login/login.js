@@ -4,8 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username: 'root',
-    password: '123456',
+    username: '',
+    password: '',
     isPassword: true
   },
 
