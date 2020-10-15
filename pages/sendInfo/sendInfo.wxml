@@ -13,7 +13,7 @@
     </view>
 
   <van-collapse accordion value="{{ activeName }}" bind:change="onChange" wx:for="{{array}}" wx:key="unique" >
-    <van-collapse-item title="取单号：{{item.Ono}}" name="{{item.Ono}}" >
+    <van-collapse-item title="取件码：{{item.Ono}}" name="{{item.Ono}}" >
       <view>
         <view>快递状态：{{item.Status}}</view> 
         <view>代取人联系方式:{{item.Phone}}</view> 

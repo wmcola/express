@@ -150,7 +150,7 @@ Page({
       },
       method:'POST',
       data: {
-          sendSno : app.globalData.user.username,
+          sendSno : app.globalData.user,
       },
       success (res) {  
         if(res.data.error_code === 0){
@@ -213,7 +213,7 @@ Page({
       },
       method:'POST',
       data: {
-          sendSno : app.globalData.user.username,
+          sendSno : app.globalData.user,
       },
       success (res) {  
         if(res.data.error_code === 0){

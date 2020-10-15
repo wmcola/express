@@ -23,7 +23,7 @@ Page({
     oo: '',
     code: ''
   },
-  
+ 
   telVolunteer:function(e){
     this.setData({
       telVolunteer:e.detail.value

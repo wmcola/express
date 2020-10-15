@@ -23,9 +23,9 @@
 
     <van-collapse value="{{ activeNames }}" bind:change="onChange" wx:if="{{code == 0}}">
       <van-collapse-item icon="star-o" title="快递员详情" name="1">
-        <view>接单总数：{{ receiveCounts }}</view> 
-        <view>被投诉总数：{{ complaintsCounts }}</view> 
-        <view>快递员总收入：{{ grade }}</view>
+        <view>接单总数：{{ receiveCounts }}单</view> 
+        <view>被投诉总数：{{ complaintsCounts }}单</view> 
+        <view>快递员总收入：{{ grade }}元</view>
       </van-collapse-item>
     </van-collapse>
   </view>

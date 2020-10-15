@@ -43,7 +43,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' 
       },
       data: {
-        Sno: app.globalData.user.username,
+        Sno: app.globalData.user,
         Grade: that.data.grade
       },
       success(res){}
@@ -88,7 +88,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' 
       },
       data: {
-        Sno: app.globalData.user.username,
+        Sno: app.globalData.user,
       },
       success (res) { 
         if(res.data.code === 0){          
@@ -100,11 +100,11 @@ Page({
         var rc = that.data.receiveCounts;
         var cc = that.data.complaintsCounts;
         var grade = '';
-        if(rc/6){
-          grade = (Math.floor(rc/6))*0.2;
+        if(rc){
+          grade +=rc;
         }   
-        if(cc/3){
-          grade -= (Math.floor(cc/3))*0.1;
+        if(cc){
+          grade -= cc*0.5;
         }    
         that.setData({
           grade : grade
@@ -148,7 +148,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' 
       },
       data: {
-        Sno: app.globalData.user.username,
+        Sno: app.globalData.user,
       },
       success (res) { 
         if(res.data.code === 0){          
@@ -160,11 +160,11 @@ Page({
         var rc = that.data.receiveCounts;
         var cc = that.data.complaintsCounts;
         var grade = '';
-        if(rc/6){
-          grade = (Math.floor(rc/6))*0.2;
+        if(rc){
+          grade +=rc;
         }   
-        if(cc/3){
-          grade -= (Math.floor(cc/3))*0.1;
+        if(cc){
+          grade -= cc*0.5;
         }    
         that.setData({
           grade : grade

@@ -75,7 +75,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' 
       },
       data: {
-        Sno: app.globalData.user.username,
+        Sno: app.globalData.user,
       },
       success (res) {
         if(res.data.error_code === 0){          
@@ -135,7 +135,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' 
       },
       data: {
-        Sno: app.globalData.user.username,
+        Sno: app.globalData.user,
       },
       success (res) {
         if(res.data.error_code === 0){          
