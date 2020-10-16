@@ -6,7 +6,8 @@ Page({
   data: {
     username: '',
     password: '',
-    isPassword: true
+    isPassword: true,
+    eyestate: false
   },
 
   //获取input框输入的值
@@ -22,7 +23,8 @@ Page({
   },
   changePwd(){
     this.setData({
-      isPassword: !this.data.isPassword
+      isPassword: !this.data.isPassword,
+      eyestate: !this.data.eyestate
     })
   },
 

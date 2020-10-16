@@ -1,4 +1,8 @@
 /* pages/my/my.wxss */
+page{
+  background-color: rgb(242,242,242);
+}
+
 .myBox{
   display: flex;
   flex-direction: column;
@@ -40,9 +44,11 @@
 .btn{ 
   height: 40px;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
   background-color: rgb(255, 255, 255);
   width: 80%;
   line-height: 40px;
   text-align: center;
+  border-radius: 20px;
 }

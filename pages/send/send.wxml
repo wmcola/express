@@ -1,91 +1,42 @@
 <!--pages/send/send.wxml-->
+<van-notice-bar left-icon="bullhorn-o" text="欢迎使用校园微快递，只需输入信息就可收到快递哟！快来成为快递员，赚钱零花钱吧！" />
 <view class="box">
-  <van-notice-bar
-    left-icon="bullhorn-o"
-    backgroundColor="#f2f2f2"
-    text="欢迎使用校园微快递，只需输入信息就可收到快递哟！快来成为快递员，赚钱零花钱吧！"
-    color="black"
-  />
-
-  <swiper autoplay="{{true}}" indicator-dots="{{true}}" circular="{{true}}" class="lun">
-    <swiper-item>
-       <image src="../images/sendImg/1.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="../images/sendImg/3.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="../images/sendImg/4.png"></image>
-    </swiper-item>
-  </swiper>
-
-  <van-dialog id="van-dialog" />
+  <view class="lun">
+    <swiper autoplay="{{true}}" indicator-dots="{{true}}" circular="{{true}}">
+      <swiper-item>
+        <image src="../images/sendImg/1.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../images/sendImg/3.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../images/sendImg/4.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
 
   <view class="sendExpress">
     <van-cell-group>
-      <van-field
-        class="input-class"
-        custom-style="border-radius:10px; height:44px;"
-        size="large"
-        value="{{ Ono }}"
-        required
-        clearable
-        left-icon="smile-o"
-        label="取件码"
-        icon="question-o"
-        placeholder="请输入取件码"
-        bind:click-icon="onClickIcon"
-        bind:input = "OnoChange"
-      />
-      <van-field
-        custom-style="margin:8px 0; border-radius:10px; height:40px;"
-        value="{{ ReceiveAddress }}"
-        left-icon="wap-home-o"
-        label="取件地址"
-        placeholder="如：成都校区近邻宝"
-        required clearable
-        bind:input = "ReceiveAddressChange"
-      />
-      <van-field
-        custom-style="margin:8px 0; border-radius:10px; height:40px;"
-        value="{{ Sname }}"
-        left-icon="user-o"
-        label="姓名"
-        placeholder="请输入姓名"
-        clearable required
-        bind:input = "SnameChange"
-      />
-       <van-field
-        custom-style="border-radius:10px; height:40px;"
-        value="{{ Sphone }}"
-        left-icon="chat-o"
-        type="number"
-        label="手机号码"
-        placeholder="请输入收件人手机号码"
-        clearable required
-        bind:input = "SphoneChange"
-      />
-      <van-field
-        custom-style="margin:8px 0; border-radius:10px; height:40px;"
-        value="{{ SendAddress }}"
-        left-icon="wap-home-o"
-        label="收件地址"
-        placeholder="如：成都校区13-612"
-        required clearable
-        bind:input = "SendAddressChange"
-      />
-      <van-field
-        value="{{ Remark }}"
-        custom-style="border-radius:10px; height:40px;"
-        left-icon="description"
-        type="textarea"
-        label="备注"
-        placeholder="可选填，如该件过大或易碎等"
-        clearable autosize
-        bind:input = "RemarkChange"
-      />
+      <van-field value="{{ Ono }}" required clearable left-icon="smile-o" label="取件码" icon="question-o"
+        placeholder="请输入取件码" bind:click-icon="onClickIcon" bind:input="OnoChange" 
+        custom-style="margin-top: 20rpx; border-radius: 10px;" />
+      <van-field value="{{ ReceiveAddress }}" left-icon="wap-home-o" label="取件地址" placeholder="如：成都校区近邻宝" required
+        clearable bind:input="ReceiveAddressChange" 
+        custom-style="margin-top: 20rpx; border-radius: 10px;" />
+      <van-field value="{{ Sname }}" left-icon="user-o" label="姓名" placeholder="请输入姓名" clearable required
+        bind:input="SnameChange" 
+        custom-style="margin-top: 20rpx; border-radius: 10px;" />
+      <van-field value="{{ Sphone }}" left-icon="chat-o" type="number" label="手机号码" placeholder="请输入收件人手机号码" clearable
+        required bind:input="SphoneChange" 
+        custom-style="margin-top: 20rpx; border-radius: 10px;" />
+      <van-field value="{{ SendAddress }}" left-icon="wap-home-o" label="收件地址" placeholder="如：成都校区13-612" required
+        clearable bind:input="SendAddressChange" 
+        custom-style="margin-top: 20rpx; border-radius: 10px;" />
+      <van-field value="{{ Remark }}" type="textarea" left-icon="records" label="备注" placeholder="可选填，如该件过大或易碎等" clearable autosize
+        bind:input="RemarkChange" 
+        custom-style="margin-top: 20rpx; border-radius: 10px;" />
     </van-cell-group>
 
     <button class="btn" bindtap="sendBtn">确认发单</button>
-  </view> 
+  </view>
 </view>
