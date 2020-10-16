@@ -52,7 +52,9 @@
   height: 80rpx;
   line-height: 80rpx;
   background-color: rgb(223, 236, 245);
-  border: 1px solid rgb(182, 170, 170);
+}
+button::after{
+  border:none;
 }
 
 .args{
