@@ -29,13 +29,16 @@ swiper image{
   width: 95%;
 }
 
-.btn{
+button{
   margin-top: 30rpx;
   margin-bottom: 60rpx;
   height: 40px;
   width: 80%;
   line-height: 40px;
-  border-radius: 10px;
-  background-color: rgb(236, 239, 241);
-  border: 1px solid rgb(161, 161, 161);
+  border-radius: 30px;
+  background-color: white;
+}
+
+button::after{
+  border: none;
 }
