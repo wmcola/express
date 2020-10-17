@@ -96,5 +96,9 @@
 
 <!-- 普通学生展示的接单页面 -->
 <view wx:if="{{ code==2 }}" class="noVolunteerview"> 
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">成都校区</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">眉山校区</view>
+  </view>
   <image class="noVolunteer" src="../images/noVolunteer.png" />         
 </view>
